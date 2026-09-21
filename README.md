@@ -12,6 +12,7 @@
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/41dhruvsharma-cyber/cc-exp-1.1/tree/master/0084-largest-rectangle-in-histogram) |
+| [0232-implement-queue-using-stacks](https://github.com/41dhruvsharma-cyber/cc-exp-1.1/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/41dhruvsharma-cyber/cc-exp-1.1/tree/master/0234-palindrome-linked-list) |
 ## Monotonic Stack
 |  |
@@ -49,4 +50,12 @@
 |  |
 | ------- |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/41dhruvsharma-cyber/cc-exp-1.1/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+## Design
+|  |
+| ------- |
+| [0232-implement-queue-using-stacks](https://github.com/41dhruvsharma-cyber/cc-exp-1.1/tree/master/0232-implement-queue-using-stacks) |
+## Queue
+|  |
+| ------- |
+| [0232-implement-queue-using-stacks](https://github.com/41dhruvsharma-cyber/cc-exp-1.1/tree/master/0232-implement-queue-using-stacks) |
 <!---LeetCode Topics End-->
