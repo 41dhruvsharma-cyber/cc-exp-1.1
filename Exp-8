@@ -1,0 +1,51 @@
+# 70. Climbing Stairs
+
+class Solution {
+public:
+    int climbStairs(int n) {
+        if (n <= 2) return n;
+        
+        int prev2 = 1; // ways to reach step 1
+        int prev1 = 2; // ways to reach step 2
+        
+        for (int i = 3; i <= n; ++i) {
+            int current = prev1 + prev2;
+            prev2 = prev1;
+            prev1 = current;
+        }
+        
+        return prev1;
+    }
+};
+
+# 403. Frog Jump
+
+class Solution {
+public:
+    bool canCross(vector<int>& stones) {
+        int n = stones.size();
+        
+        // Quick check: second stone must be at position 1 (first jump must be size 1)
+        if (stones[1] != 1) return false;
+        
+        // Map stone position -> set of jump sizes that can reach this stone
+        unordered_map<int, unordered_set<int>> dp;
+        for (int stone : stones) {
+            dp[stone] = unordered_set<int>();
+        }
+        dp[0].insert(0);
+        
+        for (int stone : stones) {
+            for (int k : dp[stone]) {
+                // Try jumps of size k - 1, k, and k + 1
+                for (int step = k - 1; step <= k + 1; ++step) {
+                    if (step > 0 && dp.count(stone + step)) {
+                        dp[stone + step].insert(step);
+                    }
+                }
+            }
+        }
+        
+        return !dp[stones.back()].empty();
+    }
+};
